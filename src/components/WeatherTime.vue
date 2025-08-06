@@ -90,8 +90,8 @@ const getWeatherData = async () => {
   const timeDifference = currentTime - lastWeatherData.lastFetchTime;
   // 是否超出 5 分钟
   if (timeDifference >= 5 * 60 * 1000) {
-    const adCodeResult = await getAdcode(weatherKey);
-    if (adCodeResult.infocode !== "10000") {
+    const adCodeResult = await getTxLocation2(weatherkey_tx);
+    if (adCodeResult.status !== "0") {
       return $message.error("地区查询失败");
     }
     // 获取天气数据
