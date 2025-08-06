@@ -91,13 +91,11 @@ const getWeatherData = async () => {
   // 是否超出 5 分钟
   if (timeDifference >= 5 * 60 * 1000) {
     const adCodeResult = await getTxLocation2(weatherkey_tx);
-    //调试2
     if (adCodeResult.status !== "0") {
       return $message.error("地区查询失败");
     }
     // 获取天气数据
     const weatherResult = await getWeather(weatherKey, adCodeResult.result.ad_info.adcode);
-    //调试3
     if (weatherResult.infocode !== "10000") {
       return $message.error("天气查询失败");
     }
