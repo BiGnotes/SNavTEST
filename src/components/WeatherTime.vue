@@ -101,7 +101,7 @@ const getWeatherData = async () => {
     // 获取天气数据
     const weatherResult = await getWeather(weatherKey, adCodeResult.result.ad_info.adcode);
     //调试3
-    console.log("提取的adcode:", adcode);
+    console.log("提取的adcode:", adCodeResult.result.ad_info.adcode);
     if (weatherResult.infocode !== "10000") {
       return $message.error("地区查询失败");
     }
