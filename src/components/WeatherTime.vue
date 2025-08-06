@@ -212,6 +212,9 @@ onBeforeUnmount(() => {
     opacity: 0.7;
     font-size: 1rem;
     text-shadow: var(--main-text-shadow);
+    .status {
+      margin: 0 6px;
+    }
     .temperature {
       margin: 0 6px;
     }
