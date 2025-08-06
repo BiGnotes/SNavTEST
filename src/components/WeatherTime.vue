@@ -59,6 +59,7 @@ import { getAdcode, getWeather, getTxLocation2} from "@/api";
 
 const set = setStore();
 const status = statusStore();
+console.log("组件加载");
 
 // 时间数据
 const timeData = ref({});
@@ -72,8 +73,6 @@ const weatherkey_tx = import.meta.env.VITE_TX_WEATHER_KEY;
 // 更新时间
 const updateTimeData = () => {
   timeData.value = getCurrentTime(set.showZeroTime, set.use12HourFormat);
-  //调试1
-  console.log("=== 开始执行天气获取 ===");
 };
 
 // 获取天气数据
