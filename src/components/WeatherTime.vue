@@ -66,7 +66,8 @@ const timeInterval = ref(null);
 
 // 天气数据
 const weatherData = ref(null);
-const weatherKey = import.meta.env.VITE_WEATHER_KEY;
+const weatherKey = import.meta.env.VITE_GD_WEATHER_KEY;
+const weatherkey_tx = import.meta.env.VITE_TX_WEATHER_KEY;
 
 // 更新时间
 const updateTimeData = () => {
