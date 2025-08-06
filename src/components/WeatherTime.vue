@@ -55,7 +55,7 @@
 import { getCurrentTime } from "@/utils/timeTools";
 import { ref, onMounted, onBeforeUnmount, watch } from "vue";
 import { statusStore, setStore } from "@/stores";
-import { getAdcode, getWeather } from "@/api";
+import { getAdcode, getWeather, getTxLocation2} from "@/api";
 
 const set = setStore();
 const status = statusStore();
