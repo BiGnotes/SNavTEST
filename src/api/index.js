@@ -18,7 +18,7 @@ export const getAdcode = async (key) => {
 export const getTxLocation = async (key) => {
   return axios({
     method: "GET",
-    url: `https://apis.map.qq.com/ws/location/v1/ip`,
+    url: "https://apis.map.qq.com/ws/location/v1/ip",
     params: { key, output: "json" },
   });
 };
