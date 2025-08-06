@@ -213,7 +213,7 @@ onBeforeUnmount(() => {
     font-size: 1rem;
     text-shadow: var(--main-text-shadow);
     .status {
-      margin: 0 6px;
+      margin-left: 6px;
     }
     .temperature {
       margin: 0 6px;
