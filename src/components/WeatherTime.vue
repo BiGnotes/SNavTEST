@@ -59,7 +59,6 @@ import { getAdcode, getWeather, getTxLocation2} from "@/api";
 
 const set = setStore();
 const status = statusStore();
-console.log("组件加载");
 
 // 时间数据
 const timeData = ref({});
@@ -134,6 +133,7 @@ onMounted(() => {
   timeInterval.value = setInterval(updateTimeData, 1000);
   // 天气
   getWeatherData();
+  console.log("组件加载");
 });
 
 onBeforeUnmount(() => {
