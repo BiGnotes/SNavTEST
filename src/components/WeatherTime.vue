@@ -72,6 +72,8 @@ const weatherkey_tx = import.meta.env.VITE_TX_WEATHER_KEY;
 // 更新时间
 const updateTimeData = () => {
   timeData.value = getCurrentTime(set.showZeroTime, set.use12HourFormat);
+  //调试1
+  console.log("=== 开始执行天气获取 ===");
 };
 
 // 获取天气数据
@@ -91,12 +93,14 @@ const getWeatherData = async () => {
   // 是否超出 5 分钟
   if (timeDifference >= 5 * 60 * 1000) {
     const adCodeResult = await getTxLocation2(weatherkey_tx);
+    //调试2
     console.log("位置查询结果:", adCodeResult); // 输出整个位置查询结果
     if (adCodeResult.status !== "0") {
       return $message.error("地区查询失败");
     }
     // 获取天气数据
     const weatherResult = await getWeather(weatherKey, adCodeResult.result.ad_info.adcode);
+    //调试3
     console.log("提取的adcode:", adcode);
     if (weatherResult.infocode !== "10000") {
       return $message.error("地区查询失败");
