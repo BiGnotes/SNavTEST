@@ -17,7 +17,7 @@
   {
     "id": 3,
     "name": "云盘",
-    "url": "https://www.aliyundrive.com/drive/"
+    "url": "https://pan.janotes.com"
   },
   {
     "id": 4,
@@ -26,8 +26,8 @@
   },
   {
     "id": 5,
-    "name": "邮箱",
-    "url": "https://mail.qq.com/"
+    "name": "企业邮箱",
+    "url": "https://exmail.qq.com/login"
   },
   {
     "id": 6,
@@ -36,7 +36,17 @@
   },
   {
     "id": 7,
-    "name": "哔哩哔哩",
-    "url": "https://www.bilibili.com/"
+    "name": "V AI",
+    "url": "https://vapi.zone.id"
+  },
+  {
+    "id": 8,
+    "name": "硅基流动",
+    "url": "https://siliconflow.cn/"
+  },
+  {
+    "id": 9,
+    "name": "魔搭",
+    "url": "https://www.modelscope.cn/"
   }
 ]
